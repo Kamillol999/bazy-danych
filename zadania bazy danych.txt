@@ -1,0 +1,48 @@
+1.) SELECT SUM(ilosc) FROM zakupy;
+
+SUM(ilosc)
+67
+
+2.) SELECT nazwa FROM `zakupy` ORDER BY ilosc DESC LIMIT 1;
+
+nazwa
+wkrety
+
+3.) SELECT Sum(ilosc) as suma_zakupow_w_alejce,alejka FROM `zakupy` GROUP BY alejka;
+
+suma_zakupow_w_alejce   alejka
+57			1
+7			2
+2			3
+1			6
+
+4.) SELECT nazwa FROM `zakupy` ORDER BY ilosc ASC LIMIT 3;
+
+nazwa
+wkretarka
+sciski
+sluchawki
+
+5.) SELECT nazwa FROM `zakupy` ORDER BY ilosc ASC;
+
+
+nazwa
+wkretarka
+sciski
+sluchawki
+klej
+katawnik
+wkrety
+
+6.) SELECT SUM(ilosc) as Suma_rzeczy FROM `zakupy`;
+
+Suma_rzeczy
+67
+
+7.) SELECT Sum(ilosc*cena) AS suma_wartości, alejka FROM `zakupy` GROUP BY alejka;
+
+suma_wartości	alejka
+606		1
+270		2
+60		3
+30		6
