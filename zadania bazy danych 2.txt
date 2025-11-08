@@ -1,0 +1,13 @@
+1.) SELECT brand, model FROM `polish_car_sales_2023`;
+2.) SELECT brand, model FROM polish_car_sales_2023 WHERE units_sold>1000;
+3.) SELECT brand, model FROM polish_car_sales_2023 WHERE brand LIKE "M%";
+
+1.)SELECT SUM(units_sold) AS sales_sum FROM polish_car_sales_2023;
+2.)SELECT brand, SUM(units_sold) AS sales_sum FROM polish_car_sales_2023 GROUP BY brand ORDER BY SUM(units_sold) DESC LIMIT 1;
+3.)SELECT brand, model ,SUM(units_sold) FROM polish_car_sales_2023 GROUP BY model ORDER BY SUM(units_sold) DESC Limit 1;
+   SELECT brand,SUM(units_sold) FROM polish_car_sales_2023 GROUP BY brand ORDER BY SUM(units_sold) DESC;
+4.)SELECT AVG(avg_price_pln) AS avg_car_price FROM polish_car_sales_2023;
+5.)SELECT brand, model FROM polish_car_sales_2023 ORDER by avg_price_pln LIMIT 1;
+   SELECT brand, model FROM polish_car_sales_2023 ORDER by avg_price_pln DESC LIMIT 1;
+6.)SELECT brand,COUNT(model) FROM polish_car_sales_2023 GROUP BY brand ORDER BY COUNT(model) DESC Limit 1;
+7.)SELECT brand ,SUM(units_sold) FROM polish_car_sales_2023 GROUP BY brand ORDER BY SUM(units_sold) DESC;
