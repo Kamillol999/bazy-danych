@@ -1,0 +1,82 @@
+1.)
+INSERT INTO `krolestwa` (`nazwa`, `obszar`, `typ`) VALUES
+('Gondor', 'Południe', 'ludzie'),
+('Rohan', 'Zachód', 'ludzie'),
+('Mordor', 'Wschód', 'orki'),
+('Isengard', 'Zachód', 'ludzie (czarni czarownicy)'),
+('Haradwaith', 'Południe', 'ludzie (Południe)');
+
+2.)
+INSERT INTO `krolestwa` (`nazwa`, `stolica`) VALUES
+('Gondor', 'Minas Tirith'),
+('Rohan', 'Edoras'),
+('Isengard', 'Orthanc'),
+('Haradwaith', NULL);
+
+3.)
+nazwa		zloto
+Gondor		120000
+Haradwaith	50000
+Isengard	30000
+Mordor		80000
+Rohan		45000
+
+4.)
+nazwa		wojsko
+Mordor		95000
+Gondor		38000
+Haradwaith	22000
+Rohan		18000
+Isengard	16000
+
+5.)
+nazwa
+Gondor
+Haradwaith
+Mordor
+
+6.)
+nazwa		nazwa
+Gondor		Strażnicy Białego Miasta
+Gondor		Gwardia Osgiliath
+Haradwaith	Korpus Haradrimów
+Haradwaith	Mûmakile Południa
+Isengard	Uruk-hai Isengardu
+Isengard	Watahy Wargów
+Mordor		Legiony Mordoru
+Mordor		Trolle Szturmowe
+Rohan		Jeźdźcy Rohanu
+Rohan		Straż Edoras
+
+7.)
+nazwa				procent_zdrowia
+Strażnicy Białego Miasta	85.0000
+Gwardia Osgiliath		72.0000
+Korpus Haradrimów		74.5455
+Mûmakile Południa		78.5714
+Uruk-hai Isengardu		63.6364
+Watahy Wargów			64.0000
+Legiony Mordoru			81.6667
+Trolle Szturmowe		67.6923
+Jeźdźcy Rohanu			90.0000
+Straż Edoras			76.0000
+
+8.)
+nazwa
+Gwardia Osgiliath
+Uruk-hai Isengardu
+Watahy Wargów
+Straż Edoras
+
+9.)
+INSERT INTO `bitwy` (`nazwa`, `data`, `miejsce`) VALUES
+('Bitwa o Helmowy Jar', '3019-03-03', 'Hornburg (Rohan)'),
+('Bitwa na Polach Pelennoru', '3019-03-15', 'Minas Tirith (Gondor)'),
+('Bitwa pod Morannon', '3019-03-25', 'Czarna Brama (Mordor)');
+
+10.)
+nazwa
+Gondor
+Rohan
+Mordor
+Haradwaith
