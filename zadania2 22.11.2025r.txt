@@ -1,0 +1,22 @@
+1.)
+imie_nazwisko	data
+Henry Blackwood	1889-04-01
+Clara Whitfield	1889-04-01
+
+
+SELECT osoby.imie_nazwisko, zdarzenia.data, zdarzenia.typ FROM osoby JOIN uczestnicy_zdarzen ON osoby.id=uczestnicy_zdarzen.osoba_id JOIN zdarzenia ON zdarzenia.id=uczestnicy_zdarzen.zdarzenie_id WHERE zdarzenia.typ LIKE "transakcja" ORDER BY zdarzenia.data LIMIT 2;
+
+2.)
+typ
+transakcja
+spotkanie
+korespondencja
+transakcja
+obserwacja
+transport
+raport medyczny
+wpis w księdze
+zeznanie
+korespondencja
+
+3.)
