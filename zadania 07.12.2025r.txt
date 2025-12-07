@@ -1,0 +1,23 @@
+1)
+SELECT klienci.imie_klienta, klienci.nazwisko_klienta, wypozyczenia.data_wyp, samochody.marka, samochody.model FROM wypozyczenia JOIN dane_wypozyczen ON dane_wypozyczen.id_wypozyczenia=wypozyczenia.id_wypozyczenia JOIN klienci ON klienci.id_klienta=wypozyczenia.id_klienta JOIN samochody ON samochody.id_samochodu=dane_wypozyczen.id_samochodu WHERE samochody.marka LIKE "M%" ORDER BY wypozyczenia.data_wyp
+
+2)
+SELECT wypozyczenia.id_wypozyczenia, samochody.marka, samochody.model, wypozyczenia.data_wyp, klienci.imie_klienta, klienci.nazwisko_klienta FROM wypozyczenia JOIN dane_wypozyczen ON dane_wypozyczen.id_wypozyczenia=wypozyczenia.id_wypozyczenia JOIN klienci ON klienci.id_klienta=wypozyczenia.id_klienta JOIN samochody ON samochody.id_samochodu=dane_wypozyczen.id_samochodu ORDER BY wypozyczenia.id_wypozyczenia;
+
+3)
+SELECT wypozyczenia.data_wyp, samochody.marka, samochody.model FROM wypozyczenia JOIN dane_wypozyczen ON dane_wypozyczen.id_wypozyczenia=wypozyczenia.id_wypozyczenia JOIN samochody ON samochody.id_samochodu=dane_wypozyczen.id_samochodu ORDER BY wypozyczenia.data_wyp;
+
+4)
+SELECT wypozyczenia.data_wyp, samochody.marka, samochody.model, klienci.imie_klienta, klienci.nazwisko_klienta FROM wypozyczenia JOIN dane_wypozyczen ON dane_wypozyczen.id_wypozyczenia=wypozyczenia.id_wypozyczenia JOIN klienci ON klienci.id_klienta=wypozyczenia.id_klienta JOIN samochody ON samochody.id_samochodu=dane_wypozyczen.id_samochodu WHERE samochody.marka LIKE "%cedes" ORDER BY wypozyczenia.data_wyp;
+
+5)
+SELECT wypozyczenia.id_wypozyczenia ,wypozyczenia.data_wyp, pracownicy.imie_pracownika, pracownicy.nazwisko_pracownika FROM wypozyczenia JOIN pracownicy ON pracownicy.id_pracownika=wypozyczenia.id_pracownika WHERE wypozyczenia.id_pracownika IS NOT NULL;
+
+6)
+SELECT pracownicy.imie_pracownika, pracownicy.nazwisko_pracownika, wypozyczenia.id_wypozyczenia ,wypozyczenia.data_wyp FROM pracownicy LEFT JOIN wypozyczenia ON wypozyczenia.id_pracownika=pracownicy.id_pracownika  
+ORDER BY `pracownicy`.`imie_pracownika`;
+
+
+7)
+SELECT wypozyczenia.id_wypozyczenia, samochody.marka, samochody.model, wypozyczenia.data_wyp, klienci.imie_klienta, klienci.nazwisko_klienta FROM wypozyczenia JOIN dane_wypozyczen ON dane_wypozyczen.id_wypozyczenia=wypozyczenia.id_wypozyczenia JOIN klienci ON klienci.id_klienta=wypozyczenia.id_klienta JOIN samochody ON samochody.id_samochodu=dane_wypozyczen.id_samochodu WHERE wypozyczenia.data_wyp>="2022-05-01" & wypozyczenia.data_wyp<="2022-07-31" ORDER BY wypozyczenia.data_wyp;
+???
